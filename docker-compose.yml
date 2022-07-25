@@ -1,0 +1,20 @@
+version: "3.5"
+services:
+  bot:
+    container_name: "etcbot"
+    build:
+      context: .
+    volumes:
+      - ./config:/config
+  etc_ipfs:
+    container_name: etc_ipfs
+    image: ipfs/go-ipfs:latest
+    volumes:
+      - /tmp/ipfs-docker-staging:/export
+      - /tmp/ipfs-docker-data:/data/ipfs
+
+    ports:
+      - 8080:8080
+      - 4001:4001
+      - 127.0.0.1:5001:5001
+

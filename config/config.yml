@@ -1,0 +1,15 @@
+# TODO: document details on elasticsearch and ipfs setup
+discord:
+  token: "DISCORD_TOKEN_HERE"
+  log_level: 10
+elasticsearch:
+  yt_index: ""
+  local_index: ""
+  main_index: ""
+  hosts:
+    - localhost
+thumbnails:
+  ipns: ""
+  cache: "/config/ipfs_thumb_hash_cache.json"
+  host: etc_ipfs
+  port: 5001

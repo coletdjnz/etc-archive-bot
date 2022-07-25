@@ -1,0 +1,5 @@
+elasticsearch[async]
+discord.py==1.6.0
+pyYAML
+python-dateutil
+aioipfs
